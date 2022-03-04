@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'mysecretkey'
 
 ##########################################
 basedir = os.path.abspath(os.path.dirname(__file__))
-# Old SQLite Database
+# Old SQLite Databas
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'data.sqlite')
 # New MySQL Database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Password123@localhost/puppies'
