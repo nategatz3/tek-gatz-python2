@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="bg-light p-5 rounded-lg m-3">
+  <h1>Puppies!!</h1>
+    <p>Add a new puppy with the form below:</p>
+    <form method="POST">
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}
+        {{ form.age.label }} {{ form.age() }}
+        {{ form.submit() }}
+    </form>
+</div>
+{% endblock %}
